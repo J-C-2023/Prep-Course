@@ -36,6 +36,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   return x + y
+
 }
 
 function resta(x, y) {
@@ -126,19 +127,19 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return math.round(num)
+  return Math.round(num)
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return math.ceil(num)
+  return Math.ceil(num)
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.Random(0)
+  return Math.random()
 }
 
 function esPositivo(numero) {
@@ -148,7 +149,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if(numero === 0) return false;
   if(numero > 0) return "Es positivo"
-  if(numero < 0) return " Es negativo"
+  if(numero < 0) return "Es negativo"
 }
 
 function agregarSimboloExclamacion(str) {
@@ -162,14 +163,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return "$(nombre) $(apellido)"
+  return `${nombre} ${apellido}`
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return `Hola $(nombre)!`
+  return `Hola ${nombre}!`
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
